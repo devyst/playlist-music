@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devyst | Playlist Music</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="profile.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <!-- <i class="material-icons">expand_more</i> -->
+            <a href="https://portfolio-abizar.vercel.app"><img src="profile.jpeg" class="profile"></a>
+            <span>Now Playing</span>
+            <!-- <i class="material-icons">more_horiz</i> -->
+            <!-- customize theme -->
+            <i class="ri-palette-line profile__social-features" id="custom-theme"></i>
+            <div class="customize-theme" id="nav-custom">
+                <div class="card">
+                    
+                    <h2>Customize your View</h2>
+                    <p class="text-muted">Manage your primary color</p>
+
+                    <div class="color">
+                        <h4>Color</h4><br>
+                        <div class="choose-color">
+                            <span class="color-1 active"></span>
+                            <span class="color-2"></span>
+                            <span class="color-3"></span>
+                            <span class="color-4"></span>
+                            <span class="color-5"></span>
+                        </div>
+                    </div>
+                    <br>
+                    <i class="ri-close-line close_theme" id="close-theme"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons play">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="list material-icons">queue_music</i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+
+            <ul>
+                <!-- list are coming from js -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-heart">
+            Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+            <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> 
+            by 
+            <a href="https://portfolio-abizar.vercel.app">Abizar Egi</a>
+            <br>
+            Template from <a href="https://www.codingnepalweb.com/create-music-player-in-javascript/">CodingNepal</a>
+        </p>
+    </footer>
+    <script src="music-list.js"></script>
+    <script src="script.js"></script>
+    <script src="custom-theme.js"></script>
+
+</body>
+</html>
